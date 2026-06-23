@@ -1,0 +1,3 @@
+CREATE DATABASE pedidos;
+CREATE DATABASE almoxarifado;
+CREATE DATABASE transporte;
