@@ -8,9 +8,9 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class ItemEstoque {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

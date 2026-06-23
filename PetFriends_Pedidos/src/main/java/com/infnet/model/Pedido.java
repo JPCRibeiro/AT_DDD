@@ -11,12 +11,12 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Entrega {
+public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long idPedido;
-    private String statusTransporte;
-    @Embedded
-    private EnderecoEntrega enderecoEntrega;
+    private String produto;
+    private Integer quantidade;
+    @Enumerated(EnumType.STRING)
+    private PedidoStatus status;
 }
