@@ -359,3 +359,13 @@ You may need to update both your build tool settings as well as your IDE.
 2026-06-23 23:36:03.051 INFO  [PetFriendsAlmoxarifado] c.i.r.PedidoConfirmadoConsumer - Pedido confirmado e enviado para transporte: 5
 2026-06-23 23:46:49.087 INFO  [PetFriendsAlmoxarifado] c.i.r.PedidoConfirmadoConsumer - Recebido evento para separar pedido no almoxarifado: 6
 2026-06-23 23:46:49.091 INFO  [PetFriendsAlmoxarifado] c.i.r.PedidoConfirmadoConsumer - Pedido confirmado e enviado para transporte: 6
+2026-06-23 23:50:20.798 INFO  [PetFriendsAlmoxarifado] c.i.PetFriendsAlmoxarifadoApplication - Starting PetFriendsAlmoxarifadoApplication using Java 21.0.11 with PID 7080 (C:\Users\JoaoPedro\IdeaProjects\AT_DDD_PetFriends\PetFriends_Almoxarifado\target\classes started by Joao Pedro in C:\Users\JoaoPedro\IdeaProjects\AT_DDD_PetFriends)
+2026-06-23 23:50:20.800 INFO  [PetFriendsAlmoxarifado] c.i.PetFriendsAlmoxarifadoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-23 23:50:29.151 INFO  [PetFriendsAlmoxarifado] c.i.PetFriendsAlmoxarifadoApplication - Started PetFriendsAlmoxarifadoApplication in 9.345 seconds (process running for 10.62)
+2026-06-24 00:07:35.399 INFO  [PetFriendsAlmoxarifado] c.i.r.PedidoConfirmadoConsumer - Recebido evento para separar pedido no almoxarifado: 7
+2026-06-24 00:07:35.456 INFO  [PetFriendsAlmoxarifado] c.i.r.PedidoConfirmadoConsumer - Pedido confirmado e enviado para transporte: 7
+2026-06-24 00:08:14.340 INFO  [PetFriendsAlmoxarifado] c.i.PetFriendsAlmoxarifadoApplication - Starting PetFriendsAlmoxarifadoApplication using Java 21.0.11 with PID 25560 (C:\Users\JoaoPedro\IdeaProjects\AT_DDD_PetFriends\PetFriends_Almoxarifado\target\classes started by Joao Pedro in C:\Users\JoaoPedro\IdeaProjects\AT_DDD_PetFriends)
+2026-06-24 00:08:14.343 INFO  [PetFriendsAlmoxarifado] c.i.PetFriendsAlmoxarifadoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-24 00:08:22.415 INFO  [PetFriendsAlmoxarifado] c.i.PetFriendsAlmoxarifadoApplication - Started PetFriendsAlmoxarifadoApplication in 8.796 seconds (process running for 9.711)
+2026-06-24 00:08:41.742 INFO  [PetFriendsAlmoxarifado] c.i.r.PedidoConfirmadoConsumer - Recebido evento para separar pedido no almoxarifado: 8
+2026-06-24 00:08:41.797 INFO  [PetFriendsAlmoxarifado] c.i.r.PedidoConfirmadoConsumer - Pedido confirmado e enviado para transporte: 8

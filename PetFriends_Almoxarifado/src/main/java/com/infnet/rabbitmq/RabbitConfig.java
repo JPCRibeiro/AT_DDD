@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitConfig {
     public static final String EXCHANGE_PEDIDOS = "exchange.pedidos";
-    public static final String EXCHANGE_PEDIDOS_CONFIRMADOS = "exchange.pedidos.confirmado";
+    public static final String EXCHANGE_PEDIDOS_CONFIRMADOS = "exchange.pedidos.confirmados";
     public static final String FILA_PREPARAR_PEDIDO = "fila.almoxarifado.preparar";
 
     @Bean
