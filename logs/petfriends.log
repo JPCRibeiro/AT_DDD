@@ -345,3 +345,17 @@ You may need to update both your build tool settings as well as your IDE.
 2026-06-23 23:10:04.672 ERROR [PetFriendsPedidos] o.s.a.r.c.CachingConnectionFactory - Shutdown Signal: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no exchange 'exchange.almoxarifado' in vhost '/', class-id=50, method-id=20)
 2026-06-23 23:10:08.683 ERROR [PetFriendsPedidos] o.s.a.r.c.CachingConnectionFactory - Shutdown Signal: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no exchange 'exchange.almoxarifado' in vhost '/', class-id=50, method-id=20)
 2026-06-23 23:10:13.704 ERROR [PetFriendsPedidos] o.s.a.r.c.CachingConnectionFactory - Shutdown Signal: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no exchange 'exchange.almoxarifado' in vhost '/', class-id=50, method-id=20)
+2026-06-23 23:19:06.190 INFO  [PetFriendsAlmoxarifado] c.i.rabbitmq.PedidoFechadoConsumer - Recebido evento para separar pedido no almoxarifado: 3
+2026-06-23 23:30:33.149 INFO  [PetFriendsAlmoxarifado] c.i.PetFriendsAlmoxarifadoApplication - Starting PetFriendsAlmoxarifadoApplication using Java 21.0.11 with PID 19388 (C:\Users\JoaoPedro\IdeaProjects\AT_DDD_PetFriends\PetFriends_Almoxarifado\target\classes started by Joao Pedro in C:\Users\JoaoPedro\IdeaProjects\AT_DDD_PetFriends)
+2026-06-23 23:30:33.151 INFO  [PetFriendsAlmoxarifado] c.i.PetFriendsAlmoxarifadoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-23 23:30:36.690 INFO  [PetFriendsAlmoxarifado] c.i.PetFriendsAlmoxarifadoApplication - Started PetFriendsAlmoxarifadoApplication in 3.882 seconds (process running for 4.374)
+2026-06-23 23:30:43.391 INFO  [PetFriendsAlmoxarifado] c.i.r.PedidoConfirmadoConsumer - Recebido evento para separar pedido no almoxarifado: 4
+2026-06-23 23:30:43.409 INFO  [PetFriendsAlmoxarifado] c.i.r.PedidoConfirmadoConsumer - Pedido confirmado e enviado para transporte: 4
+2026-06-23 23:30:43.412 ERROR [PetFriendsAlmoxarifado] o.s.a.r.c.CachingConnectionFactory - Shutdown Signal: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no exchange 'exchange.pedidos.confirmado' in vhost '/', class-id=60, method-id=40)
+2026-06-23 23:32:33.591 INFO  [PetFriendsAlmoxarifado] c.i.PetFriendsAlmoxarifadoApplication - Starting PetFriendsAlmoxarifadoApplication using Java 21.0.11 with PID 26448 (C:\Users\JoaoPedro\IdeaProjects\AT_DDD_PetFriends\PetFriends_Almoxarifado\target\classes started by Joao Pedro in C:\Users\JoaoPedro\IdeaProjects\AT_DDD_PetFriends)
+2026-06-23 23:32:33.592 INFO  [PetFriendsAlmoxarifado] c.i.PetFriendsAlmoxarifadoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-23 23:32:37.973 INFO  [PetFriendsAlmoxarifado] c.i.PetFriendsAlmoxarifadoApplication - Started PetFriendsAlmoxarifadoApplication in 4.791 seconds (process running for 5.392)
+2026-06-23 23:36:03.002 INFO  [PetFriendsAlmoxarifado] c.i.r.PedidoConfirmadoConsumer - Recebido evento para separar pedido no almoxarifado: 5
+2026-06-23 23:36:03.051 INFO  [PetFriendsAlmoxarifado] c.i.r.PedidoConfirmadoConsumer - Pedido confirmado e enviado para transporte: 5
+2026-06-23 23:46:49.087 INFO  [PetFriendsAlmoxarifado] c.i.r.PedidoConfirmadoConsumer - Recebido evento para separar pedido no almoxarifado: 6
+2026-06-23 23:46:49.091 INFO  [PetFriendsAlmoxarifado] c.i.r.PedidoConfirmadoConsumer - Pedido confirmado e enviado para transporte: 6
