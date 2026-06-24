@@ -6,7 +6,7 @@ import org.springframework.amqp.core.FanoutExchange;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.amqp.support.converter.JacksonJsonMessageConverter;
+import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
@@ -38,8 +38,14 @@ public class RabbitConfig {
     }
 
     @Bean
-    public Binding bindingEstoqueReservado(Queue filaEstoqueReservado) {
-        return BindingBuilder.bind(filaEstoqueReservado).to(new FanoutExchange("exchange.almoxarifado"));
+    public FanoutExchange exchangeAlmoxarifado() {
+        return new FanoutExchange("exchange.almoxarifado");
+    }
+
+    @Bean
+    public Binding bindingEstoqueReservado(Queue filaEstoqueReservado,
+                                           FanoutExchange exchangeAlmoxarifado) {
+        return BindingBuilder.bind(filaEstoqueReservado).to(exchangeAlmoxarifado);
     }
 
     @Bean
@@ -59,7 +65,7 @@ public class RabbitConfig {
 
     @Bean
     public MessageConverter jsonMessageConverter() {
-        return new JacksonJsonMessageConverter();
+        return new Jackson2JsonMessageConverter();
     }
 
     @Bean
