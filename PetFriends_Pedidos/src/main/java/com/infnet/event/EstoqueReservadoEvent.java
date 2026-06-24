@@ -9,6 +9,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class PedidoPreparadoEvent {
+public class EstoqueReservadoEvent {
     private Long pedidoId;
+    private String produto;
+    private int quantidade;
 }

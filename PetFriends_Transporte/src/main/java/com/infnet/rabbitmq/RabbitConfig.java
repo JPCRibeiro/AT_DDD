@@ -13,22 +13,22 @@ import org.springframework.context.annotation.Configuration;
 @EnableRabbit
 @Configuration
 public class RabbitConfig {
-    public static final String EXCHANGE_ALMOXARIFADO = "exchange.almoxarifado.preparado";
-    public static final String FILA_DESPACHAR_PEDIDO = "fila.transporte.despachar";
+    public static final String EXCHANGE_PEDIDOS_CONFIRMADOS = "exchange.pedidos.confirmados";
+    public static final String FILA_LOGISTICA = "fila.transporte.logistica";
 
     @Bean
-    public FanoutExchange exchangeAlmoxarifado() {
-        return new FanoutExchange(EXCHANGE_ALMOXARIFADO);
+    public FanoutExchange exchangePedidosConfirmados() {
+        return new FanoutExchange(EXCHANGE_PEDIDOS_CONFIRMADOS);
     }
 
     @Bean
-    public Queue filaDespacharPedido() {
-        return new Queue(FILA_DESPACHAR_PEDIDO, true);
+    public Queue filaLogistica() {
+        return new Queue(FILA_LOGISTICA, true);
     }
 
     @Bean
-    public Binding bindingTransporte(Queue filaDespacharPedido, FanoutExchange exchangeAlmoxarifado) {
-        return BindingBuilder.bind(filaDespacharPedido).to(exchangeAlmoxarifado);
+    public Binding bindingLogistica(Queue filaLogistica, FanoutExchange exchangePedidosConfirmados) {
+        return BindingBuilder.bind(filaLogistica).to(exchangePedidosConfirmados);
     }
 
     @Bean
